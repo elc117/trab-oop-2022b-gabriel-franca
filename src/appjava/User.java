@@ -7,15 +7,16 @@ public class User{
     private String telefone;
     private String email;
     private String endereco;
-   //methods
-    public User(String n, String s, String t, String email, String end){
+    
+    // getters and setters methods
+    public User(String n, String s, String t, String email, String end) {
         this.nome = n;
         this.senha = s;
         this.telefone = t;
         this.email = email;
         this.endereco = end;
     }
-    // getters and setters
+    
     public String getNome() {
         return nome;
     }

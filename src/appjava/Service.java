@@ -9,18 +9,21 @@ public class Service {
     private boolean aberto; 
     private boolean entrega;
     private boolean paraViagem;
-
-    public Service(User prop, String n, String categ, String desc, 
-    double vlr, boolean ent, boolean pv){
-        this.proprietario = prop;
-        this.nomeDoNegocio = n;
-        this.categoria = categ;
-        this.descricao = desc;
-        this.valor = vlr;
-        this.entrega = ent;
-        this.paraViagem = pv;
+    
+    public Service(){
+        
     }
 
+    public Service(User p, String n, String c, String d, double v, boolean e, boolean pv) {
+        this.proprietario = p;
+        this.nomeDoNegocio = n;
+        this.categoria = c;
+        this.descricao = d;
+        this.valor = v;
+        this.entrega = e;
+        this.paraViagem = pv;
+    }
+    
     public String getNomeDoNegocio() {
         return nomeDoNegocio;
     }
